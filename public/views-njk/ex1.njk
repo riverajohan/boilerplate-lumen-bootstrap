@@ -1,0 +1,25 @@
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+<img src="{{imgUrl}}" class="share-img">
+<h3 class="share-title">Compartir Imagen</h3>
+<ul class="shares">
+<li>
+    <a href="#" class="fb-share" target="_blank">
+        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+    </a>
+</li>
+<li>
+    <a href="{{shareLinkTW}}" class="tw-share" target="_blank">
+        <i class="fa fa-twitter-square" aria-hidden="true"></i>
+    </a>
+</li>
+</ul>
+
+<p class="bottles-text bigger">Hemos entregado <span class="remainig-bottles">{{bottlesGiven}}</span></p>
+<p class="bottles-text">de 450 botellas para ser leídas en Braille.</p>
+
+{% if bottlesGiven < 450 %}
+    <div class="request-bottle-btn-wrapper">
+        <button type="button" class="btn btn-primary request-bottle-btn">Solicitar Botella</button>
+    </div>
+{% endif %}

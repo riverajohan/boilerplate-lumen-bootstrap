@@ -1,0 +1,34 @@
+{
+  "name": "boilerplate(lumen,bootstrap)",
+  "version": "1.0.0",
+  "description": "boilerplate(lumen,bootstrap)",
+  "main": "public/",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "nunjucks": "^3.0.1",
+    "sweetalert2": "^6.6.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "eslint": "^3.19.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "jshint": "^2.9.4",
+    "node-sass": "^4.5.3",
+    "optimize-css-assets-webpack-plugin": "^1.3.1",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.6.1"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/webpack --watch",
+    "build": "webpack -p"
+  },
+  "author": "nahoj",
+  "license": "ISC"
+}
